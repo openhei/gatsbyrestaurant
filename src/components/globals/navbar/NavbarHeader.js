@@ -5,24 +5,20 @@ import { FaAlignRight } from "react-icons/fa"
 import styled from "styled-components"
 import { styles } from "../../../utils"
 
-export default class NavbarHeader extends Component {
-  render() {
-    const { handleNavbar } = this.props
-
-    return (
-      <HeaderWrapper>
-        <Link to="/">
-          <img src={logo} alt="logo" />
-        </Link>
-        <FaAlignRight
-          className="toggle-icon"
-          onClick={() => {
-            handleNavbar()
-          }}
-        />
-      </HeaderWrapper>
-    )
-  }
+export default function NavbarHeader({ handleNavbar }) {
+  return (
+    <HeaderWrapper>
+      <Link to="/">
+        <img src={logo} alt="company logo" />
+      </Link>
+      <FaAlignRight
+        className="toggle-icon"
+        onClick={() => {
+          handleNavbar()
+        }}
+      />
+    </HeaderWrapper>
+  )
 }
 
 const HeaderWrapper = styled.div`

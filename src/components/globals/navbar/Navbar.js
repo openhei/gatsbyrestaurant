@@ -1,9 +1,8 @@
 import React, { Component } from "react"
 import NavbarHeader from "./NavbarHeader"
-import NavbarIcons from "./NavbarIcons"
 import NavbarLinks from "./NavbarLinks"
+import NavbarIcons from "./NavbarIcons"
 import styled from "styled-components"
-
 export default class Navbar extends Component {
   state = {
     navbarOpen: false,
