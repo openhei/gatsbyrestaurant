@@ -4,11 +4,13 @@ import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { HomeHeader } from "../utils"
+import img from "../images/bcg/homeBcg.jpeg"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h3>This is home page</h3>
+    <HomeHeader img={img}>hello from home header</HomeHeader>
   </Layout>
 )
 
